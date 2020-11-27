@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+body, input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+}

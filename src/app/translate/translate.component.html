@@ -1,0 +1,44 @@
+<div class="container">
+  <form [formGroup]="translateForm">
+    <div class="row">
+      <div class="col-25">
+        <label for="hebInput">Hebrew</label>
+      </div>
+      <div class="col-75">
+        <input type="text" formControlName="hebInput" id="hebInput" placeholder="כאן כותבים בעברית">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="unix">Lower case</label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" formControlName="engInput" id="engInput" placeholder="כאן תהיה תוצאה">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="toRev">Reverse</label>
+      </div>
+      <div class="col-75">
+        <input type="checkbox" formControlName="toRev" id="toRev">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        
+      </div>
+      <div class="col-50">
+        <input type="button" value="To Unix.." (click)="toUnix(translateForm.value)">
+        <input type="button" value="To Hebrew.." (click)="toHebrew(translateForm.value)">
+      </div>
+      <div class="col-25">
+        
+      </div>
+    </div>
+  </form>
+</div>
